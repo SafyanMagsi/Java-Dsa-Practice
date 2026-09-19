@@ -33,38 +33,7 @@ public class ArrayStack implements Stack {
         Object[] aa = a;
         a = new Object[2*aa.length];
         System.arraycopy(aa, 0, a, 0, size);
-    }
-
-    public static void main(String[] args) {
-       
-    ArrayStack s = new ArrayStack(10);
-s.push(10);
-s.push(20);
-s.push(30);
-
-while (!s.isEmpty()) {
-    System.out.println(s.pop());
-        }
-
-
-
-
-        ArrayStack s1 = new ArrayStack(10);
-s1.push(10);
-s1.push(20);
-
-ArrayStack s2 = new ArrayStack(10);
-s2.push(30);
-s2.push(40);
-
-while (!s2.isEmpty()) {
-    s1.push(s2.pop());
+    }  
 }
 
-while (!s1.isEmpty()){
-    System.out.println( s1.pop());
-}
-    }
-
-}
 
